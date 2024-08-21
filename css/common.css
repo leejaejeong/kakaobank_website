@@ -274,8 +274,6 @@ header .m_gnb > ul + ul {
     letter-spacing: -0.09em;
 }
 
-
-
 .sec .btn_box{
     display: inline-block;
 }
@@ -340,8 +338,6 @@ header .m_gnb > ul + ul {
         border-radius: 5px;
     }
     
-
-
     .account_opening , .deposits, .moim_account, .twenty_six_weeks{
         border-bottom: 18px solid #fafafa;
     }
@@ -399,6 +395,10 @@ footer .info p{
     margin-bottom: 12px;
 }
 
+footer .info p > br{
+    display: none;
+}
+
 footer .info p > span{
     font-weight: bold;
     color: #000;
@@ -437,6 +437,26 @@ footer .mark_sns span{
     color: #666;
     font-weight: bold;
     font-size: 0.95rem;
+}
+
+@media(max-width:768px){
+    footer .menu_list ul{
+        flex-wrap: wrap;
+    }
+    footer .menu_list ul:nth-child(1){
+        justify-content: flex-start;
+    }
+    footer .info p{
+        line-height: 1.5;
+    }
+    footer .info p > br{
+        display: block;
+    }
+
+    footer .mark_sns{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 /* footer 커스텀 end */

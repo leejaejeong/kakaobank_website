@@ -503,23 +503,19 @@
     text-align: center;
     padding:150px  0;
     position: relative;
-    height: 600px;
 }
 
 .it_technology .txt_underline{
     width: 100px;
     height: 2px;
     background-color: #000;
-    margin-bottom: 150px;
+    margin-bottom: 112px;
 }
 
 .it_technology .container{
-    position: absolute;
-    bottom: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    z-index: 1;
+    position: relative;
+    width: 100%;
+    z-index: 2;
 }
 
 .it_technology .bg_line{
@@ -527,7 +523,7 @@
     height: 1px;
     background-color: #eee;
     position: absolute;
-    top:60%;
+    top:53%;
     left:0;
 }
 
@@ -566,9 +562,6 @@
 }
 
 @media(max-width:768px){
-    .it_technology{
-        height: 800px;
-    }
     .it_technology .txt_underline{
         width: 80px;
     }
@@ -582,9 +575,10 @@
     .it_technology .container .txt_box > ul > li > .img_box{
         display: block;
         width: 100%;
-        max-width: 100px;
+        margin-bottom: 20px;
     }
     .it_technology .container .txt_box > ul > li > .img_box > img{
+        max-width: 200px;
         width: 100%;
     }
     .it_technology .container .txt_box ul{
@@ -592,6 +586,13 @@
     }
     .it_technology .container .txt_box ul li{
         width: 100%;
+        margin-bottom: 30px;
+    }
+    .it_technology .container .txt_box ul li:nth-child(3){
+        display: none;
+    }
+    .it_technology .container .txt_box h5{
+        margin-bottom: 10px;
     }
     .it_technology .bg_line{
         display: none;
